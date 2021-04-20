@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>Rasti i krijimit te JS Eventve</title>
+        <style>
+            body {
+                width: 100%;
+                min-height: 100%;
+                font-family: 'Segne UI Light', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #mbajtsiWeb{
+                display: flex;
+                flex-direction: colum;
+                width: 50%;
+                min-height: 300px;
+                margin: 0 auto;
+                background-color: beige;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="mbajtsiWeb">
+            <h2>Ketu jemi duke shafqur funksionet e Eventeve</h2>
+            <!-- <input id="eventi01" type="button" value="KLIKO" 
+            size="20px" onclick="alert('Ketu e shqfaqim funksionin e Eventeve')"/> -->
+            <input id="eventi01" type="button" value="KLIKO" style="width: 60px;"/>
+        </div>
+        <script>
+            eventi01.onclick = () => {
+                alert('ketu perdorim eventin duke krijuar metoden')
+            } 
+        </scrip>
+    </body>
+</htm>

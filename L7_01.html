@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>DOM Event</title>
+        <link rel="stylesheet" type="text/css"
+        href="L06-stilizimi01.css"/>
+        <script src="DOMevent01.js"></script>
+        <style>
+            body {
+                width: 100%;
+                min-height: 100%;
+                font-family: 'Segne UI Light', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #mbajtsiWeb{
+                display: flex;
+                flex-direction: colum;
+                width: 50%;
+                min-height: 300px;
+                margin: 0 auto;
+                background-color: beige;
+            }
+
+        </style>
+
+    </head>
+    <body>
+    <div id="mbajtsiUebi">
+    <h2>DOM dhe Events</h2>
+     <p>Pershendetje
+        <input type="text" id="texti"/></br>
+        <button id="klikimi">Kliko</button>
+    </p>
+    <div id="kontenti">
+    </div>
+    </div>
+    <script>
+        function shfaq(){
+            var a = document.getElementById('texti').value;
+            var mesazhi = "<h2> Sote kemi ligjerata ne: "+a+"</h2>";
+            document.querySelector('#kontenti').innerHTML = mesazhi;
+        }
+
+        document.getElementById('klikimi').addEventListener('click',shfaq);
+    </script>
+    <!-- <input id="elem2" type='button' value="Kliko ne" style="width:60px;"/>
+    <script>
+    var handler1=()=> {
+    alert('Faleminderit nje here!');
+    };
+    var handler2=()=> {
+    alert('Faleminderit dyta here!');
+    };
+    elem2.onclick = () => alert("Tung!");
+    elem2.addEventListener("click", handler1); // FLM 1!
+    elem2.addEventListener("click", handler2); // FLM 2!
+    </script> -->
+    
+    </body>
+</htm>
